@@ -13,7 +13,7 @@ app.get('/api/generate', async (req, res) => {
     try {
         // Make a POST request to the API
         const response = await axios.post(
-            `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyAfT0umtfIQ6dIAa5yl9_m02ldHcJMl9Is`,
+            `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-latest:generateContent?key=AIzaSyAfT0umtfIQ6dIAa5yl9_m02ldHcJMl9Is`,
             {
                 contents: [{ parts: [{ text: prompt }] }]
             },
